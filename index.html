@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/app.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="dist/images/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Mon profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Mes projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Landing -->
+<section id="landing" class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0">Portfolio Archi3DRender</h1>
+            <h2 class="mt-2 mb-5">Imad HARAKE</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Section 1 -->
+<section id="section1">
+    <div class="container">
+        <h2 class="text-center">Mon profil</h2>
+        <div class="row">
+            <div class="col-auto">
+                <img width="250" class="img-thumbnail" src="dist/images/profil.jpg" alt="Photo de profil">
+            </div>
+            <div class="col-md-6 mt-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur blanditiis ea porro quaerat quibusdam reprehenderit soluta tempore. Amet itaque laudantium officiis quae rem. Facilis mollitia natus quasi quibusdam sint?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam assumenda esse minima nobis quas rem sunt? Consectetur nulla placeat quas? Earum eius illum obcaecati quod sequi tempora totam vel?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae debitis dolorem doloribus error eveniet explicabo laudantium nesciunt nobis non nostrum obcaecati, optio praesentium provident reprehenderit ullam veritatis voluptates?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2 -->
+<section id="section2">
+    <div class="container">
+        <h2 class="text-center">Mes projets</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://craftsnippets.com/articles_images/placeholder/placeholder.jpg" class="d-block w-100" alt="Projet 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://craftsnippets.com/articles_images/placeholder/placeholder.jpg" class="d-block w-100" alt="Projet 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://craftsnippets.com/articles_images/placeholder/placeholder.jpg" class="d-block w-100" alt="Projet 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3 -->
+<section id="section3">
+    <div class="container">
+        <h2 class="text-center">Me contacter</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Entrez votre message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<!-- Scripts supplémentaires -->
+<script>
+    // Ajoutez ici votre propre code JavaScript/jQuery personnalisé
+</script>
+
+</body>
+</html>

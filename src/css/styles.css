@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p, label, span, div {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background-size: cover;
+    background-image: url('../assets/images/landing.png');
+    margin-top:0;
+    background-attachment: fixed;
+}
+
+.masthead h1 {
+    background-color: white;
+    padding: 50px 10px 10px;
+}
+
+.masthead h2 {
+    text-align: left;
+    color: white;
+}
