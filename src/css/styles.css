@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
-p, label, span, a  {
+p, label, span, a {
     font-family: 'Poppins', sans-serif;
     font-weight: 300
 }
@@ -25,7 +25,7 @@ section {
     padding: 15rem 0;
     background-size: cover;
     background-image: url('../assets/images/landing.png');
-    margin-top:0;
+    margin-top: 0;
     background-attachment: fixed;
 }
 
@@ -56,6 +56,7 @@ section {
     border-radius: 50%;
     background-color: #dedede;
 }
+
 .owl-dot.active span {
     background-color: #2F4B34;
 }
@@ -81,7 +82,7 @@ section {
 
 .owl-nav .owl-prev:hover,
 .owl-nav .owl-next:hover {
-    color: #ff0000;
+    color: #2F4B34;
 }
 
 .owl-prev {
@@ -91,3 +92,27 @@ section {
 .owl-next {
     margin-right: 10px;
 }
+
+
+/* Ajout de l'animation */
+
+.navbar {
+    transition: top 0.3s ease-in-out;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+

@@ -30,5 +30,15 @@ $(document).ready(function () {
         }
     });
 
+});
 
+window.addEventListener('scroll', function() {
+    var navbar = $('#navbar');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition > 300) {
+        navbar.addClass('sticky-top sticky');
+    } else {
+        navbar.removeClass('sticky-top sticky');
+    }
 });
