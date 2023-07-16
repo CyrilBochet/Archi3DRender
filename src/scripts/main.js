@@ -7,6 +7,8 @@ navbarToggler.on('click', function () {
 
 
 $(document).ready(function () {
+    var owlCarousel = $('#carousel-amenagements-interieurs');
+
     $('#carousel-amenagements-interieurs, #carousel-amenagements-bureaux').owlCarousel({
         loop: true,
         items: 3,
@@ -27,4 +29,6 @@ $(document).ready(function () {
             }
         }
     });
+
+
 });

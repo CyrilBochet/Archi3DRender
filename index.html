@@ -51,7 +51,7 @@
 <section id="landing" class="masthead">
     <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-           <img class="img-fluid" width="400" src="dist/images/logo.png" alt="Logo">
+            <img class="img-fluid" width="400" src="dist/images/logo.png" alt="Logo">
         </div>
     </div>
 </section>
@@ -85,50 +85,125 @@
     <div class="container">
         <h2 class="text-center">Mes projets</h2>
         <hr class="col-3 mx-auto">
+        <!--    Aménagements intérieurs    -->
         <div class="my-4">
             <h4>Aménagements intérieurs</h4>
-            <div id="carousel-amenagements-interieurs" class="owl-carousel">
+            <div id="carousel-amenagements-interieurs" class="owl-carousel owl-prevent-modal">
                 <div>
                     <img src="dist/images/projets/miniatures/image-01.jpg" class="d-block w-100" alt="Projet 1">
+                    <button onclick="openModal('modal-1')" class="btn btn-dark col-12 rounded-0 mb-3">Afficher les
+                        détails
+                    </button>
                 </div>
                 <div>
                     <img src="dist/images/projets/miniatures/image-07.jpg" class="d-block w-100" alt="Projet 2">
+                    <button onclick="openModal('modal-2')" class="btn btn-dark col-12 rounded-0 mb-3">Afficher les
+                        détails
+                    </button>
                 </div>
                 <div>
                     <img src="dist/images/projets/miniatures/image-08.jpg" class="d-block w-100" alt="Projet 3">
+                    <button onclick="openModal('modal-3')" class="btn btn-dark col-12 rounded-0 mb-3">Afficher les
+                        détails
+                    </button>
                 </div>
                 <div>
-                    <img src="dist/images/projets/miniatures/image-09.jpg" class="d-block w-100" alt="Projet 3">
+                    <img src="dist/images/projets/miniatures/image-06.jpg" class="d-block w-100" alt="Projet 5">
+                    <button onclick="openModal('modal-4')" class="btn btn-dark col-12 rounded-0 mb-3">Afficher les
+                        détails
+                    </button>
                 </div>
                 <div>
-                    <img src="dist/images/projets/miniatures/image-06.jpg" class="d-block w-100" alt="Projet 3">
+                    <img src="dist/images/projets/miniatures/image-09.jpg" class="d-block w-100" alt="Projet 4">
+                    <button onclick="openModal('modal-5')" class="btn btn-dark col-12 rounded-0 mb-3">Afficher les
+                        détails
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modal-1-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-1-label">Modal 1 Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal 1 Content...
+                    </div>
 
-<!--        &lt;!&ndash; Modal &ndash;&gt;-->
-<!--        <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--            <div class="modal-dialog">-->
-<!--                <div class="modal-content">-->
-<!--                    <div class="modal-header">-->
-<!--                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
-<!--                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                    </div>-->
-<!--                    <div class="modal-body">-->
-<!--                        ...-->
-<!--                    </div>-->
-<!--                    <div class="modal-footer">-->
-<!--                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-2-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-2-label">Modal 2 Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal 2 Content...
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="modal-3-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-3-label">Modal 3 Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal 3 Content...
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="modal-4-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-4-label">Modal 4 Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal 4 Content...
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="modal-5-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-5-label">Modal 5 Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal 5 Content...
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--    Aménagements de bureaux    -->
         <div class="my-4">
             <h4>Aménagements de bureaux</h4>
             <div id="carousel-amenagements-bureaux" class="owl-carousel">
@@ -179,5 +254,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        var bootstrapModal = new bootstrap.Modal(modal);
+        bootstrapModal.show();
+    }
+</script>
 </body>
 </html>
