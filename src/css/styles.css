@@ -4,16 +4,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
-p, label, span, div {
+p, label, span, a  {
     font-family: 'Poppins', sans-serif;
     font-weight: 300
 }
 
 section {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .masthead {
@@ -36,4 +37,57 @@ section {
 .masthead h2 {
     text-align: left;
     color: white;
+}
+
+.owl-dots {
+    display: block;
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.owl-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dedede;
+}
+.owl-dot.active span {
+    background-color: #2F4B34;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    color: #ff0000;
+}
+
+.owl-prev {
+    margin-left: 10px;
+}
+
+.owl-next {
+    margin-right: 10px;
 }

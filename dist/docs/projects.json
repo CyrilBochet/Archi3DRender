@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "titre": "lorem",
+    "miniature": "image-01.jpg",
+    "images": [
+      "lorem.webp"
+    ],
+    "type": "Aménagements intérieurs"
+  },
+  {
+    "id": 2,
+    "miniature": "image-02.jpg",
+    "images": [
+      "lorem.webp"
+    ],
+    "type": "Aménagements bureaux"
+  }
+]
