@@ -1,13 +1,21 @@
-const navbarToggler = $('.navbar-toggler');
-const navbarCollapse = $('#navbarCollapse');
-
-navbarToggler.on('click', function () {
-    navbarCollapse.toggleClass('show');
-});
+// const navbarToggler = $('.navbar-toggler');
+// const navbarCollapse = $('#navbarCollapse');
+//
+// navbarToggler.on('click', function () {
+//     navbarCollapse.toggleClass('show');
+// });
 
 
 $(document).ready(function () {
-    var owlCarousel = $('#carousel-amenagements-interieurs');
+    const navLinks = $(".nav-link");
+
+    navLinks.on("click", function () {
+        // Vérifiez si la navbar est actuellement étendue
+        if ($(".navbar-collapse").hasClass("show")) {
+            // Réduire la navbar en supprimant la classe "show"
+            $(".navbar-collapse").removeClass("show");
+        }
+    });
 
     $('#carousel-amenagements-interieurs, #carousel-amenagements-bureaux').owlCarousel({
         loop: true,
@@ -32,9 +40,9 @@ $(document).ready(function () {
 
 });
 
-window.addEventListener('scroll', function() {
-    var navbar = $('#navbar');
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', function () {
+    const navbar = $('#navbar');
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollPosition > 300) {
         navbar.addClass('sticky-top sticky');
