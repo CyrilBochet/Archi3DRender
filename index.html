@@ -49,15 +49,15 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfOSSsnAAAAAFV0NfRLCrp6wQlSvDyfKf1Suzgu"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdMjjUnAAAAAHbTfTk1drPfMLpHN54880R4aMps"></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LfOSSsnAAAAAFV0NfRLCrp6wQlSvDyfKf1Suzgu', {action: 'submit'}).then(function (token) {
+            grecaptcha.execute('6LdMjjUnAAAAAHbTfTk1drPfMLpHN54880R4aMps', {action: 'submit'}).then(function (token) {
                 document.getElementById('g-recaptcha-response').value = token;
             });
         });
     </script>
+
     <script src="dist/app.js"></script>
 </head>
 <body>
@@ -805,6 +805,17 @@
         </div>
     </div>
 </section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <hr>
+    <div class="container">
+        <p class="copyright mb-1">
+            Archi 3D Render © 2023 - <span id="year"></span> | Tous droits réservés.
+        </p>
+        <p class="text-muted small">Created by <a class="text-decoration-none" rel="noreferrer" target="_blank"  href="https://www.linkedin.com/in/cyril-bochet/">Cyril BOCHET</a>.</p>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('#year').html(new Date().getFullYear());
     const navLinks = $(".nav-link");
 
     navLinks.on("click", function () {

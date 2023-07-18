@@ -134,7 +134,7 @@ label.required:not(.form-check-label):before, legend.col-form-label.required:bef
 }
 
 .grecaptcha-badge {
-    display: none !important;
+    /*display: none !important;*/
 }
 
 
