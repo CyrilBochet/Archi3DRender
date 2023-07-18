@@ -1,11 +1,3 @@
-// const navbarToggler = $('.navbar-toggler');
-// const navbarCollapse = $('#navbarCollapse');
-//
-// navbarToggler.on('click', function () {
-//     navbarCollapse.toggleClass('show');
-// });
-
-
 $(document).ready(function () {
     const navLinks = $(".nav-link");
 
