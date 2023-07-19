@@ -45,14 +45,7 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdMjjUnAAAAAHbTfTk1drPfMLpHN54880R4aMps"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LdMjjUnAAAAAHbTfTk1drPfMLpHN54880R4aMps', {action: 'submit'}).then(function (token) {
-                document.getElementById('g-recaptcha-response').value = token;
-            });
-        });
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -773,7 +766,7 @@
                                     <label class="form-label required mb-0" for="inputEmail">Nom</label>
                                     <input class="form-control" type="text" id="inputNom" autocomplete="family-name"
                                            name="nom" required
-                                           placeholder="Saisissez votre nom...">
+                                           placeholder="Votre nom...">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -781,7 +774,7 @@
                                     <label class="form-label required mb-0" for="inputPrenom">Prénom</label>
                                     <input class="form-control" type="text" id="inputPrenom" autocomplete="given-name"
                                            name="prenom" required
-                                           placeholder="Saisissez votre prénom...">
+                                           placeholder="Votre prénom...">
                                 </div>
                             </div>
                         </div>
@@ -789,15 +782,15 @@
                             <label class="form-label required mb-0" for="inputEmail">Email</label>
                             <input class="form-control" type="email" id="inputEmail" name="email" autocomplete="email"
                                    required
-                                   placeholder="Saisissez votre adresse mail...">
+                                   placeholder="Votre adresse mail...">
                         </div>
                         <div class="form-group">
                             <label class="form-label required mb-0" for="inputMessage">Message</label>
                             <textarea class="form-control" type="text" id="inputMessage" name="message" rows="4"
                                       required
-                                      placeholder="Saisissez votre message..."></textarea>
+                                      placeholder="Votre message..."></textarea>
                         </div>
-                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <div class="g-recaptcha" data-sitekey="6LdMjjUnAAAAAHbTfTk1drPfMLpHN54880R4aMps"></div>
                         <div class="form-group mt-3">
                             <button type="submit" class="btn btn-primary" id="contact-form-button">ENVOYER</button>
                         </div>
