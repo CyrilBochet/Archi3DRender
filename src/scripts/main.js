@@ -1,4 +1,6 @@
+import 'jquery-lazy'
 $(document).ready(function () {
+
     $('#year').html(new Date().getFullYear());
     const navLinks = $(".nav-link");
 
@@ -31,7 +33,17 @@ $(document).ready(function () {
         }
     });
 
+    $('.lazy').Lazy({
+        effect: 'fadeIn',
+        effectTime: 125,
+        afterLoad: function (element) {
+            $(element).removeClass("lazy");
+        },
+    });
+
 });
+
+
 
 window.addEventListener('scroll', function () {
     const navbar = $('#navbar');
