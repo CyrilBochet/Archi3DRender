@@ -34,16 +34,6 @@ section {
     background-attachment: fixed;
 }
 
-.masthead h1 {
-    background-color: white;
-    padding: 50px 10px 10px;
-}
-
-.masthead h2 {
-    text-align: left;
-    color: white;
-}
-
 .owl-dots {
     display: block;
     text-align: center;

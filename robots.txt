@@ -2,9 +2,9 @@ User-agent: *
 Allow: /
 
 User-agent: Googlebot-Image
-Disallow: dist/images/projets/
+Disallow: /dist/images/projets/
 Disallow: /img/favicon.ico
-Disallow: *.ico$
-Disallow: /img/*.gif$
+Disallow: /.ico$
+Disallow: /img/.gif$
 
 Sitemap: https://archi3drender.fr/sitemap.xml
